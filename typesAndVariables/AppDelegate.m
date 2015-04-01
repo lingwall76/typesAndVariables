@@ -1,6 +1,6 @@
 //
 //  AppDelegate.m
-//  typesAndVariables
+//  TypesAndVariables
 //
 //  Created by Sarah on 4/1/15.
 //  Copyright (c) 2015 Big Nerd Ranch. All rights reserved.
@@ -16,9 +16,25 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    return YES;
+    
+    // Declare two variables CGFloat height;
+    CGFloat weight = 185.0f;
+    CGFloat height = 71.0f;
+    CGFloat bodyMassIndex = (weight / (height * height)) * 703;
+    NSLog (@"%f", bodyMassIndex);
+    
+    
+    return 0;
+    
+    
+    
+    
 }
+// Override point for customization after application launch.
+
+
+
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
